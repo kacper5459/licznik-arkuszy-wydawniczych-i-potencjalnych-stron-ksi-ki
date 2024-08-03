@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Licznik arkuszy wydawniczych i potencjalnych stron</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        header, main {
+            text-align: center;
+            margin: 20px;
+        }
+        #pomieszczenie {
+            margin: 20px auto;
+            text-align: left;
+            max-width: 400px;
+        }
+        button {
+            display: block;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Wyliczysz dzięki tej stronie potencjalne strony przyszłej książki</h1>
+    </header>
+    <main>
+        <div id="pomieszczenie">
+            <h2>Podaj liczbę znaków twego projektu</h2> 
+            <label for="iloscznakow">Liczba znaków:</label>
+            <input type="number" id="iloscznakow" name="iloscznakow">
+            <label for="kejsik">Wybierz opcję:</label>
+            <select id="kejsik" name="kejsik">
+                <option value="1">Licz liczbę arkuszy wydawniczych książki</option>
+                <option value="2">Licz liczbę potencjalnych stron książki</option>
+                <option value="3">Licz liczbę arkuszy wydawniczych i potencjalnych stron książki</option>
+            </select>
+            <button type="button" id="liczebnik" onclick="licznik()">Sprawdź</button>
+        </div>   
+        <h2 id="podanodane">Tu ukażą się wkrótce pobrane od ciebie dane</h2>
+    </main>
+</body>
+</html>
